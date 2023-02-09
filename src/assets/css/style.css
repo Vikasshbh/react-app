@@ -16,6 +16,10 @@
     border-color: #FB5B21;
 }
 
+.bg-primary{
+    background-color: #FB5B21 !important;
+}
+
 [class^="flaticon-"]:before,
 [class*=" flaticon-"]:before,
 [class^="flaticon-"]:after,
