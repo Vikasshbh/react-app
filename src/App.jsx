@@ -9,6 +9,7 @@ import BannerHead from './components/general/headings/BannerHead';
 import OrangeHead from './components/general/headings/OrangeHead';
 import BlackHeading from './components/general/headings/BlackHeading';
 import TrainerSchedule from './components/TrainerSchedule/TrainerSchedule';
+
 import Paragraph from './components/general/paragraphs/Paragraph';
 import TabButton from './components/buttons/TabButton';
 import Footer from './components/footer/Footer';
