@@ -8,7 +8,7 @@ import Button from './components/buttons/Button';
 import BannerHead from './components/general/headings/BannerHead';
 import OrangeHead from './components/general/headings/OrangeHead';
 import BlackHeading from './components/general/headings/BlackHeading';
-import TrainerSchedule from './components/TrainerSchedule/TrainerSchedule';
+import TrainerSchedule from './components/Trainers/TrainerSchedule';
 
 import Paragraph from './components/general/paragraphs/Paragraph';
 import TabButton from './components/buttons/TabButton';
