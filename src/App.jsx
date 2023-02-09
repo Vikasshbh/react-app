@@ -4,7 +4,7 @@ import './assets/css/style.css';
 import './App.css';
 import aboutImg from './assets/images/about.jpg';
 import { FaApple, FaFacebookF, FaLinkedin, FaTwitter } from "react-icons/fa";
-import Button from './components/buttons/button';
+import Button from './components/buttons/Button';
 import BannerHead from './components/general/headings/BannerHead';
 import OrangeHead from './components/general/headings/OrangeHead';
 import BlackHeading from './components/general/headings/BlackHeading';
