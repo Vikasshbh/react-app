@@ -8,7 +8,7 @@ const Newsletter = (props) => {
                 <h4 className="text-uppercase text-white mb-4">{props.head}</h4>
                 <h6 className="text-uppercase text-white">{props.subhead}</h6>
                 <p className="text-light">{props.desc}</p>
-                <EmailForm text="Sign In"></EmailForm>
+                <EmailForm text="Sign In" />
             </div>
         </>
     )

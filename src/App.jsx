@@ -8,8 +8,7 @@ import Button from './components/buttons/Button';
 import BannerHead from './components/general/headings/BannerHead';
 import OrangeHead from './components/general/headings/OrangeHead';
 import BlackHeading from './components/general/headings/BlackHeading';
-import TrainerSchedule from './components/Trainers/TrainerSchedule';
-
+import TrainerSection from './components/TraineSection/TrainerSection';
 import Paragraph from './components/general/paragraphs/Paragraph';
 import TabButton from './components/buttons/TabButton';
 import Footer from './components/footer/Footer';
@@ -116,59 +115,7 @@ const App = () => {
 
 
             {/* className timetable */}
-            <div className="container-fluid p-5">
-                <div className="mb-5 text-center">
-                    <OrangeHead text="CLASS SCHEDULE"></OrangeHead>
-                    <BlackHeading text="WORKING HOURS"></BlackHeading>
-                </div>
-                <div className="tab-className text-center">
-                    <ul className="nav nav-pills d-inline-flex justify-content-center bg-dark text-uppercase rounded-pill mb-5">
-                        <li className="nav-item">
-                            <a className="nav-link rounded-pill text-white active" data-bs-toggle="pill" href="#tab-1">Monday</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link rounded-pill text-white" data-bs-toggle="pill" href="#tab-2">Tuesday</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link rounded-pill text-white" data-bs-toggle="pill" href="#tab-3">Wednesday</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link rounded-pill text-white" data-bs-toggle="pill" href="#tab-4">Thursday</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link rounded-pill text-white" data-bs-toggle="pill" href="#tab-5">Friday</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link rounded-pill text-white" data-bs-toggle="pill" href="#tab-6">Saturday</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link rounded-pill text-white" data-bs-toggle="pill" href="#tab-7">Sunday</a>
-                        </li>
-                    </ul>
-                    <div className="tab-content">
-                        <div id="tab-1" className="tab-pane fade show p-0 active">
-                            <div className="row g-5">
-                                <TrainerSchedule></TrainerSchedule>
-                            </div>
-                        </div>
-                        <div id="tab-2" className="tab-pane fade p-0">
-                            <div className="row g-5">
-                                <TrainerSchedule></TrainerSchedule>
-                            </div>
-                        </div>
-                        <div id="tab-3" className="tab-pane fade p-0">
-                            <div className="row g-5">
-                                <TrainerSchedule></TrainerSchedule>
-                            </div>
-                        </div>
-                        <div id="tab-4" className="tab-pane fade p-0">
-                            <div className="row g-5">
-                                <TrainerSchedule></TrainerSchedule>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <TrainerSection></TrainerSection>
             {/* footer start */}
             <Footer></Footer>
         </div>

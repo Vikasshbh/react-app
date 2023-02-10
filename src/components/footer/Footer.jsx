@@ -2,7 +2,7 @@ import React from 'react'
 import GetinTouch from './Links/GetinTouch';
 import QuicKLinks from './Links/QuickLinks';
 import PopularLink from './Links/PopularLink';
-import Newsletter from './Links/Newsletter';
+import Newsletter from './newsLetter/Newsletter';
 const Footer = () => {
     return (
         <>
