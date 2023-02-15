@@ -1,5 +1,4 @@
-import React from 'react';
-import Button from '../Buttons/Button';
+// import Button from '../Buttons/Button';
 import BannerHead from '../general/Headings/BannerHead';
 import TrainerSchedule from '../Trainers/TrainerSchedule';
 const Homepage = () => {
@@ -12,8 +11,8 @@ const Homepage = () => {
                     <div className="col-12 text-center">
                         <BannerHead headText="Classes"></BannerHead>
                         <div className="d-flex justify-content-center">
-                            <Button gap="2" btnName="JOIN US"></Button>
-                            <Button gap="0" varient="light" btnName="CONTACT US"></Button>
+                            {/* <Button gap="2" btnName="JOIN US"></Button>
+                            <Button gap="0" varient="light" btnName="CONTACT US"></Button> */}
                         </div>
                     </div>
                 </div>
