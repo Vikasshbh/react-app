@@ -10,6 +10,11 @@
     color: #FB5B21 !important;
 }
 
+
+.nav-pills .nav-link:focus{
+    background-color: #FB5B21;
+}
+
 .btn-primary {
     color: #000;
     background-color: #FB5B21;

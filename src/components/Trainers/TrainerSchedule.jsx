@@ -4,17 +4,12 @@ import BlackHeading from '../general/headings/BlackHeading';
 import { Trainers } from './trainers';
 
 const TrainerSchedule = (props) => {
-    
-
-
         const[trainerData, setTrainerData]=useState(Trainers);
-
-
         const filterSchedule = (dayFilter)=>{
            const filterResult = Trainers.filter((element)=>{
                 return element.day === dayFilter;
             })
-           setTrainerData([...filterResult]);           
+           setTrainerData([...filterResult]);        
         }
 
     return (
@@ -27,7 +22,7 @@ const TrainerSchedule = (props) => {
                 <div className="tab-className text-center">
                     <ul className="nav nav-pills d-inline-flex justify-content-center bg-dark text-uppercase rounded-pill mb-5">
                         <li className="nav-item">
-                            <button className="nav-link rounded-pill text-white active" onClick={()=>{filterSchedule('monday')}}>Monday</button>
+                            <button className="nav-link rounded-pill text-white" onClick={()=>{filterSchedule('monday')}}>Monday</button>
                         </li>
                         <li className="nav-item">
                             <button className="nav-link rounded-pill text-white" onClick={()=>{filterSchedule('tuesday')}}>Tuesday</button>
@@ -67,8 +62,6 @@ const TrainerSchedule = (props) => {
                     </div>
                 </div>
             </div>
-
-
         </>
     )
 }

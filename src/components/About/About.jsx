@@ -5,9 +5,11 @@ import BlackHeading from '../general/headings/BlackHeading';
 import Paragraph from '../general/paragraphs/Paragraph';
 import TabButton from '../Buttons/TabButton';
 
+
 const About = () => {
     return (
-        <div className="container-fluid p-5">
+        <>
+            <div className="container-fluid p-5">
             <div className="row gx-5">
                 <div className="col-lg-5 mb-5 mb-lg-0" style={{ minHeight: '500px' }}>
                     <div className="position-relative h-100">
@@ -39,6 +41,8 @@ const About = () => {
                 </div>
             </div>
         </div>
+        </>
+        
     )
 }
 
