@@ -19,32 +19,38 @@ const BASE_SLUG = 'react-app';
 console.log(BASE_SLUG);
 const router = createBrowserRouter([
   {
-    path:BASE_SLUG,
-    element: <Homepage />
-  },
-  {
-    path: `${BASE_SLUG}/about`,
-    element: <About />,
-  },
-  {
-    path: `${BASE_SLUG}/members`,
-    element: <MemberPage />,
-  },
-  {
-    path: `${BASE_SLUG}/classes`,
-    element: <Classespage />,
-  },
-  {
-    path: `${BASE_SLUG}/trainer`,
-    element: <TrainerPage />,
-  },
-  {
-    path: `${BASE_SLUG}/join-us`,
-    element: <JoinUs />,
-  },
-  {
-    path: `${BASE_SLUG}/*`,
-    element: <Error />
+    path: '/',
+    element: <Layout/>,
+    children: [
+      {
+        path:BASE_SLUG,
+        element: <Homepage />
+      },
+      {
+        path: `${BASE_SLUG}/about`,
+        element: <About />,
+      },
+      {
+        path: `${BASE_SLUG}/members`,
+        element: <MemberPage />,
+      },
+      {
+        path: `${BASE_SLUG}/classes`,
+        element: <Classespage />,
+      },
+      {
+        path: `${BASE_SLUG}/trainer`,
+        element: <TrainerPage />,
+      },
+      {
+        path: `${BASE_SLUG}/join-us`,
+        element: <JoinUs />,
+      },
+      {
+        path: `${BASE_SLUG}/*`,
+        element: <Error />
+      },
+    ],
   },
 ]);
 

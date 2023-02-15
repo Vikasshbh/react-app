@@ -1,11 +1,9 @@
-import Button from '../Buttons/Button';
-import BannerHead from '../general/Headings/BannerHead';
-import TrainerSchedule from '../Trainers/TrainerSchedule';
+import Button from './../Buttons/Button';
+import BannerHead from './../general/Headings/BannerHead';
+import TrainerSchedule from './../Trainers/TrainerSchedule';
 const Homepage = () => {
     return (
         <>
-            {/* <Header/> */}
-            {/* <Outlet></Outlet> */}
             <div className="container-fluid bg-primary p-5 bg-hero mb-5">
                 <div className="row py-5">
                     <div className="col-12 text-center">
@@ -18,7 +16,6 @@ const Homepage = () => {
                 </div>
             </div>
             <TrainerSchedule />
-            {/* <Footer></Footer> */}
         </>
     )
 }
