@@ -8,11 +8,9 @@ import { useNavigate } from 'react-router-dom';
 
 
 
-const Header = () => {
-    const navigate = useNavigate();
-    const gotoJoin = () => {
-        alert("hello");
-    }
+const Header = (props) => {
+    // const navigate = useNavigate();
+    // navigate("/react-app/register");
 
   return (
     <>

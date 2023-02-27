@@ -1,7 +1,10 @@
 import { useRef, useEffect, useState } from "react";
 import '../ClassesPage/ClassPage.css';
 import MemberPage from "../MemberPage/MemberPage";
+// import {useHistory} from "react-router-dom";
 
+
+// const history = useHistory();
 const Classespage = () => {
 
   const memberFirstName = useRef();
@@ -13,10 +16,8 @@ const Classespage = () => {
 
   const API = 'https://classes-app-400de-default-rtdb.firebaseio.com/memberlist.json';
 
-
   const [memberData, setMemberData] = useState([]);
   const [exercise,setExercise] = useState(null)
-
   useEffect(() => {
     fetch(API,
     ).then((response) => response.json())
@@ -27,7 +28,6 @@ const Classespage = () => {
         console.error('Error:', error);
       });
   }, [memberData])
-
   const fetchRadio = (e) => {
     setExercise(e.target.value)
   }
@@ -55,7 +55,7 @@ const Classespage = () => {
 
     console.log(data);
 
-    fetch(API,
+  const result =  fetch(API,
       {
         method: 'POST',
         headers: {
@@ -70,6 +70,10 @@ const Classespage = () => {
       .catch((error) => {
         console.error('Error:', error);
       });
+
+      
+
+      // history.push("/");
   }
 
 
@@ -91,13 +95,6 @@ const Classespage = () => {
 
   }
 
-  const membersHtml = membersList.map(member => {
-    return <div key={member.id}>
-      <h5 className="text-center">{member.firstname}</h5>
-      <h5 className="text-center">{member.exercise}</h5>
-      <p className="text-center">{member.time}</p>
-    </div>
-  })
 
 
 

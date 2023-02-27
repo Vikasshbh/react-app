@@ -6,7 +6,7 @@ import Newsletter from './newsLetter/Newsletter';
 const Footer = () => {
     return (
         <>
-            <div className="container-fluid bg-dark text-secondary px-5 mt-5">
+            <div className="container-fluid bg-dark text-secondary px-5">
                 <div className="row gx-5">
                     <div className="col-lg-8 col-md-6">
                         <div className="row gx-5">

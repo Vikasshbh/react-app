@@ -8,10 +8,18 @@ import Layout from './components/Layout';
 // import ContactPage from './components/ContactPage/ContactPage';
 import Classespage from './components/ClassesPage/Classespage';
 import Error from './components/ErrorPage/Error';
-import TrainerPage from './components/TrainerPage/TrainerPage';
+// import TrainerPage from './components/TrainerPage/TrainerPage';
 import './assets/css/style.css';
 import JoinUs from './components/Crud/JoinUS/JoinUs';
-import MemberPage from './components/MemberPage/MemberPage';
+import Members from './components/MemberPage/Members';
+// import Signup from './components/Member/Signup';
+// import Signin from './components/Member/Signin';
+// import Shopping from './components/Member/Shopping';
+import Cart from './components/Cart/Cart';
+import Register from './components/Cart/Register';
+import Login from './components/Cart/Login';
+import Products from './components/Cart/Products';
+
 
 
 
@@ -32,19 +40,47 @@ const router = createBrowserRouter([
       },
       {
         path: `${BASE_SLUG}/members`,
-        element: <MemberPage />,
+        element: <Members />,
       },
       {
         path: `${BASE_SLUG}/classes`,
         element: <Classespage />,
       },
-      {
-        path: `${BASE_SLUG}/trainer`,
-        element: <TrainerPage />,
-      },
+      // {
+      //   path: `${BASE_SLUG}/trainer`,
+      //   element: <TrainerPage />,
+      // },
       {
         path: `${BASE_SLUG}/join-us`,
         element: <JoinUs />,
+      },
+      // {
+      //   path: `${BASE_SLUG}/signup`,
+      //   element: <Signup />,
+      // },
+      // {
+      //   path: `${BASE_SLUG}/signin`,
+      //   element: <Signin />,
+      // },
+      // {
+      //   path: `${BASE_SLUG}/shopping`,
+      //   element: <Shopping />,
+      // },
+      {
+        path: `${BASE_SLUG}/register`,
+        element: <Register />,
+      },
+      {
+        path: `${BASE_SLUG}/login`,
+        element: <Login />,
+      },
+      {
+        path: `${BASE_SLUG}/cart`,
+        element: <Cart />,
+      },
+      {
+        path: `${BASE_SLUG}/products`,
+        element: <Products />,
       },
       {
         path: `${BASE_SLUG}/*`,
